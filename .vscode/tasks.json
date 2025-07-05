@@ -44,6 +44,16 @@
                     "${fileDirname}/${fileBasenameNoExtension}.run"
                 ]
             },
+            "linux": {
+                "command": "g++",
+                "args": [
+                    "-g",
+                    "--std=c++14",
+                    "${file}",
+                    "-o",
+                    "${fileDirname}/${fileBasenameNoExtension}.run"
+                ]
+            },
             "group": "build",
             "problemMatcher": [
                 "$gcc"
@@ -57,6 +67,9 @@
                 "command": "${fileDirname}/${fileBasenameNoExtension}.exe"
             },
             "osx": {
+                "command": "${fileDirname}/${fileBasenameNoExtension}.run"
+            },
+            "linux": {
                 "command": "${fileDirname}/${fileBasenameNoExtension}.run"
             },
             "group": {
